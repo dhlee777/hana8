@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>예제</title>
+<nav>
+</nav>
+  <style>
+    *{
+        border: 1px solid;
+    }
+    header,nav {
+  border: 3px solid green; /* 초록색 테두리 */
+  display: block;          /* 한 줄 전체 차지 */
+  width: 100%;             /* 가로 전체 */
+  padding: 10px;           /* 안쪽 여백 */
+  box-sizing: border-box;  /* 테두리 포함해서 100% 유지 */
+}
+.dot_red{
+    border: 2px dotted red;
+}
+    aside {
+      height: 50vh;
+      display: flex;
+      vertical-align: middle;
+    }
+
+    .container {
+      width: 400px;
+      border: 2px dotted;
+      border-color: blue;
+      margin: 10px;
+      background-color: yellow;
+      padding: 2rem;
+    }
+
+    img:not(.x) {
+      border: 3px dotted red;
+      margin-left: 15px;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>header</header>
+  <nav>nav</nav>
+  <main style="border: 1px solid red; padding: 5px;">
+    <div class="container">
+      <h1>main > container</h1>
+      <section>section</section>
+      <article>
+        <h3>article - title</h3>
+        <figure>
+          <img src="https://avatar.vercel.sh/s" alt="S" class="x" />
+          <img src="https://unsplash.com/photos/b51xWeb75R4/download?ixid=M3wxMjA3fDB8MXxhbGx8M3x8fHx8fHx8MTc2MTg3OTc1M3w&force=true"
+            alt="lion" width="150">
+        </figure>
+      </article>
+    </div>
+    <aside style="align-items: center;">aside</aside>
+  </main>
+  <footer class="text-center"><b>&#169; 시니어코딩</b></footer>
+</body>
+</html>
+
